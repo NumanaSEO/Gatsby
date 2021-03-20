@@ -595,3 +595,17 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
+.row {
+  display: flex;
+}
+.col-100 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+.col-50 {
+  flex-basis: 50%;
+  max-width: 50%;
+
+}

@@ -7,10 +7,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-graphql`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        typeName: "WordPress",
+        fieldName: "wordPress",
+        url: `https://wordpress-342716-1730927.cloudwaysapps.com/graphql`,
+        refetchInterval: 60
       },
     },
     `gatsby-transformer-sharp`,
